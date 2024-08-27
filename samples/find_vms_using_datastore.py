@@ -52,7 +52,6 @@ def find_vms_datastore(si, datastore_name):
                 if not hasattr(device.backing, "datastore"):
                     continue
 
-                vm_ds = device.backing.datastore
                 if device.backing.datastore == datastore:
                     vms.append(vm.name)
 
